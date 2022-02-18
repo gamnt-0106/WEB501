@@ -1,0 +1,83 @@
+{
+  "posts": [
+    {
+      "id": "4CTZj-x",
+      "title": "Nike pro 1",
+      "img": "http://res.cloudinary.com/db8bve0lu/image/upload/v1644932723/t6wykkvorx10wve8kumh.jpg",
+      "desc": ""
+    },
+    {
+      "title": "ÁO Khoác 2 lớp",
+      "img": "http://res.cloudinary.com/db8bve0lu/image/upload/v1644933283/scvexo3bnfnjekqlqivf.jpg",
+      "desc": "120VNĐ",
+      "id": "WvGEdvL"
+    },
+    {
+      "title": "ÁO Khoác 2 lớp",
+      "img": "http://res.cloudinary.com/db8bve0lu/image/upload/v1644933287/gkwjcugcfrvqptyxtwop.jpg",
+      "desc": "120VNĐ",
+      "id": "s4-mhvS"
+    },
+    {
+      "title": "ÁO Khoác 2 lớp",
+      "img": "http://res.cloudinary.com/db8bve0lu/image/upload/v1644933287/ucoyorngvzoyuliom79d.jpg",
+      "desc": "120VNĐ",
+      "id": "_eoqSxn"
+    },
+    {
+      "title": "ÁO Khoác 2 lớp",
+      "img": "http://res.cloudinary.com/db8bve0lu/image/upload/v1644933288/qcm0epcewgaprmngfadz.jpg",
+      "desc": "120VNĐ",
+      "id": "XHT7htf"
+    },
+    {
+      "title": "ÁO Khoác 2 lớp",
+      "img": "http://res.cloudinary.com/db8bve0lu/image/upload/v1644933288/vblavkvsg3aaos6th8ec.jpg",
+      "desc": "120VNĐ",
+      "id": "ZzSFzC8"
+    },
+    {
+      "title": "jean",
+      "img": "http://res.cloudinary.com/db8bve0lu/image/upload/v1645097808/bdqulpbl1dqjto9g3ced.jpg",
+      "desc": "",
+      "id": "p96_Rz-"
+    }
+  ],
+  "users": [
+    {
+      "email": "gamgam@gmail.com",
+      "password": "$2a$10$s7kASJ7219r3MBGV73neyu4gu9dX2ceb.nOCvdPJtmZj01Gbodrgy",
+      "id": 1
+    },
+    {
+      "email": "gam123@gmail.com",
+      "password": "$2a$10$EoRIMsSFfn3DJBjwTN2XLOWXStApCcJzJh5NMNV8YOkLxAoE.TKii",
+      "id": 2
+    }
+  ],
+  "product":[
+    {
+      "name": "ÁO",
+      "img": "http://placeimg.com/640/480/nature",
+      "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "price": "100",
+      "id": "1"
+    },
+    {
+      "name": "Quần",
+      "img": "http://placeimg.com/640/480/nature",
+      "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "price": "200",
+      "id": "2"
+    },
+    {
+      "name": "Quần",
+      "img": "http://placeimg.com/640/480/nature",
+      "desc": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "price": "300",
+      "id": "3"
+    }
+
+  ]
+
+}
