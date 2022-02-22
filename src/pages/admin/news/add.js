@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import axios from "axios";
 
 import { add } from "../../../api/post";
@@ -40,16 +41,20 @@ const AdminAddPost = {
                 <form id="form-add">
                     <input type="text" class="border border-black" id="title-post" placeholder="Title"/><br />
                     <div class="w-3xl grid grid-cols-2 gap-8">
-                        <div><input type="file" class="border border-black" id="img-post" /></div>
-                       
+                    <div><input type="file" class="border border-black" id="img-post" /></div>
                     </div>
+                    <input type="text" class="border border-black" id="price-post" placeholder="Price"/><br />
+                    <input type="number" class="border border-black" id="amount-post" placeholder="Amount"/><br />
                     <textarea name="" cols="30" rows="10" class="border border-black" id="desc-post" placeholder="Description"></textarea><br />
                    <a href=""> <button class="inline-block px-4 py-3 text-black rounded bg-sky-600 " >Thêm</button></a>
                 </form>
             </div>
                     <!-- /End replace -->
                 </div>
+            
+
             </main>
+        
         </div>
         
         `;
@@ -80,8 +85,14 @@ const AdminAddPost = {
             add({
                 title: document.querySelector("#title-post").value,
                 img: data.url,
+                price: document.querySelector("#price-post").value,
+                amount: document.querySelector("#amount-post").value,
                 desc: document.querySelector("#desc-post").value,
+
             });
+            window.location.href = "/#/admin/news";
+
+            reRender(AdminNewsPage, "#app");
         });
     },
 };

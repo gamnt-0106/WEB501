@@ -45,7 +45,9 @@ const AdminNewsPage = {
                                                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">STT</th>
                                                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tiêu đề</th>
                                                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">IMG</th>
+                                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">PRICE</th>
                                                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">DESCRIPTON</th>
+                                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th>
                                                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ACTION</th>
                                                     <th scope="col" class="relative px-6 py-3"></th>
                                                 </tr>
@@ -62,9 +64,16 @@ const AdminNewsPage = {
                                                             <td class="px-6 py-4 whitespace-nowrap">
                                                             <img class="w-[200px]" src=" ${post.img}" alt="">
                                                              </td>
-                                                             <td class="px-6 py-4 whitespace-nowrap">
-                                                             ${post.desc}
-                                                         </td>
+                                                             <td class="px-6 py-4 whitespace-nowrap italic ">
+                                                                ${post.price}
+                                                            </td>
+                                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                                 ${post.desc}
+                                                            </td>
+                                                      
+                                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                                 ${post.amount}
+                                                             </td>
                                                             <td class="px-6 py-4 whitespace-nowrap">
                                                                 <a href="/#/admin/news/${post.id}/edit" class="inline-block px-4 py-3 text-black rounded bg-sky-600 ">Edit</a>
                                                                 <button data-id=${post.id} class="btn btn-remove inline-block px-4 py-3 text-black rounded bg-sky-600 hover:bg-indigo-600">Delete</button>

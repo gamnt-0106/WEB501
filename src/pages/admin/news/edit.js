@@ -1,5 +1,7 @@
+import AdminNewsPage from ".";
 import { get, update } from "../../../api/post";
 import AdminNav from "../../../components/AdminNav";
+import { reRender } from "../../../utils";
 
 const AdminEditPost = {
     async render(id) {
@@ -35,6 +37,18 @@ const AdminEditPost = {
                                     placeholder="Image" 
                                     value="${data.img}"
                                     /> </br >
+                            <input type="text" 
+                                    id="price-post" 
+                                    class="border border-black"  
+                                    placeholder="Price" 
+                                    value="${data.price}"
+                                    /> </br >
+                            <input type="text" 
+                                    id="amount-post" 
+                                    class="border border-black"  
+                                    placeholder="Amount" 
+                                    value="${data.amount}"
+                                    /> </br >
                             <textarea name="" 
                                     id="desc-post" 
                                     cols="30" 
@@ -59,9 +73,15 @@ const AdminEditPost = {
                 id,
                 title: document.querySelector("#title-post").value,
                 img: document.querySelector("#img-post").value,
+                price: document.querySelector("#price-post").value,
                 desc: document.querySelector("#desc-post").value,
+                amount: document.querySelector("#amount-post").value,
             });
+            window.location.href = "/#/admin/news";
+
+            reRender(AdminNewsPage, "#app");
         });
     },
+
 };
 export default AdminEditPost;

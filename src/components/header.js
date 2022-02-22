@@ -58,7 +58,7 @@ const Header = {
                                     <option  value="11">Xbox One</option>
                                 </select>
                                 <input placeholder="Search entire store here..." type="text">
-                                <button type="submit"><i class="fas fa-search"></i></button>
+                                <button type="submit"><i class="fal fa-search"></i></button>
                             </form>
                         </div>
                         <div class="cart_area">
@@ -71,12 +71,12 @@ const Header = {
 
                             </div>
                             <div class="cart_link">
-                                <a href="#"><i class="fa fa-shopping-basket"></i>2 item(s)</a>
+                                <a href="/cart"><i class="fa fa-shopping-basket"></i>2 item(s)</a>
                                 <!--mini cart-->
                                  <div class="mini_cart">
                                     <div class="cart_item top">
                                        <div class="cart_img">
-                                           <a href="#"><img src="/img/s-product/product.jpg" alt=""></a>
+                                           <a href="/cart"><img src="/img/s-product/product.jpg" alt=""></a>
                                        </div>
                                         <div class="cart_info">
                                             <a href="#">ÁO </a>
@@ -143,10 +143,10 @@ const Header = {
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="/about">Shop</a>
+                                    <a href="/products">Shop</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item-has-children">
-                                            <a href="#">Shop Layouts</a>
+                                            <a href="/products">Shop Layouts</a>
                                             <ul class="sub-menu">
                                                 <li><a href="/about">shop</a></li>
                                                 <li><a href="shop-fullwidth.html">Full Width</a></li>
@@ -277,34 +277,34 @@ const Header = {
                         <div class="col-lg-4">
                             <div class="cart_area">
                                 <div class="cart_link">
-                                    <a href="#"><i class="fa fa-shopping-basket"></i>2 item(s)</a>
+                                    <a href="/cart"><i class="fa fa-shopping-basket"></i>2 item(s)</a>
                                     
                                     <!--mini cart-->
                                      <div class="mini_cart">
                                         <div class="cart_item top">
                                        <div class="cart_img">
-                                           <a href="#"><img src="img/s-product/product.jpg" alt=""></a>
+                                           <a href="/cart"><img src="img/s-product/product.jpg" alt=""></a>
                                        </div>
                                         <div class="cart_info">
                                             <a href="#"></a>
 
-                                            <span>1x $60.00</span>
+                                            <span>160.00</span>
     
                                         </div>
                                         <div class="cart_remove">
-                                            <a href="#"><i class="ion-android-close"></i></a>
+                                            <a href="#"><i class="far fa-times"></i></a>
                                         </div>
                                     </div>
                                     <div class="cart_item bottom">
                                        <div class="cart_img">
-                                           <a href="#"><img src="img/s-product/product2.jpg" alt=""></a>
+                                           <a href="/cart"><img src="img/s-product/product2.jpg" alt=""></a>
                                        </div>
                                         <div class="cart_info">
                                             <a href="#">Marshall Portable  Bluetooth</a>
-                                                <span> 1x $160.00</span>
+                                                <span> 160.000</span>
                                         </div>
                                         <div class="cart_remove">
-                                            <a href="#"><i class="ion-android-close"></i></a>
+                                            <a href="#"><i class="far fa-times"></i></a>
                                         </div>
                                     </div>
                                     <div class="cart__table">
@@ -312,22 +312,22 @@ const Header = {
                                             <tbody>
                                                 <tr>
                                                     <td class="text-left">Sub-Total :</td>
-                                                    <td class="text-right">$150.00</td>
+                                                    <td class="text-right">150.000</td>
                                                 </tr>
                                              
                                                 <tr>
                                                     <td class="text-left">Total :</td>
-                                                    <td class="text-right">$184.00</td>
+                                                    <td class="text-right">184.000VND</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                     
                                     <div class="cart_button view_cart">
-                                        <a href="cart.html">View Cart</a>
+                                        <a href="/cart">View Cart</a>
                                     </div>
                                     <div class="cart_button checkout">
-                                        <a href="/signin">Checkout</a>
+                                        <a href="/">Checkout</a>
                                     </div>
                                     </div>
                                     <!--mini cart end-->
@@ -353,7 +353,7 @@ const Header = {
                                             <li><a href="index-8.html">Home 8</a></li>
                                         </ul>
                                     </li>
-                                    <li class="mega_items"><a href="/product">shop <i class="fa fa-angle-down"></i></a>
+                                    <li class="mega_items"><a href="/products">shop <i class="fa fa-angle-down"></i></a>
                                         <ul class="mega_menu">
                                             <li><a href="#">Shop Layouts</a>
                                                 <ul>
@@ -368,8 +368,8 @@ const Header = {
                                                 <ul>
                                                     <li><a href="portfolio.html">portfolio</a></li>
                                                     <li><a href="portfolio-details.html">portfolio details</a></li>
-                                                    <li><a href="cart.html">cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                    <li><a href="/cart">cart</a></li>
+                                                    <li><a href="/signin">Checkout</a></li>
                                                     <li><a href="my-account.html">my account</a></li>
 
 
@@ -404,7 +404,7 @@ const Header = {
                                             <li><a href="blog-sidebar.html">blog  Sidebar</a></li>
                                             <li><a href="blog-fullwidth.html">blog fullwidth</a></li>
                                         </ul>
-                                    </li>
+                                    </li>h
                                     <li><a href="#">pages <i class="fa fa-angle-down"></i></a>
                                         <ul class="sub_menu pages">
                                             <li><a href="/about">About Us</a></li>
@@ -452,8 +452,8 @@ const Header = {
                             <div class="main_menu"> 
                                 <nav>  
                                     <ul>
-                                        <li class="active"><a href="/">Home </a></li>
-                                        <li><a href="/product">shop </a></li>
+                                        <li class="/"><a href="/">Home </a></li>
+                                        <li><a href="/products">shop </a></li>
                                         <li><a href="/about">About us</a></li>
                                         </li>
                                         <li><a href="/blog">blog</a></li>

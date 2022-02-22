@@ -1,13 +1,13 @@
 import toastr from "toastr";
-import { getAll, remove } from "../../../api/product";
-import AdminProduct from "../../../components/AdminProduct";
+import { getAll, remove } from "../../api/product";
 
-const ProductPage = {
+
+const ProductPages = {
     async render() {
         const { data } = await getAll;
         return /* html */ `
         <div class="min-h-full">
-            ${AdminProduct.render()}
+            ${.render()}
             <header class="bg-white shadow">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     <!-- This example requires Tailwind CSS v2.0+ -->
@@ -102,4 +102,4 @@ const ProductPage = {
         });
     },
 };
-export default ProductPage;
+export default ProductPages;

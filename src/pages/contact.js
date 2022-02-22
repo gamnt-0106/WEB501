@@ -399,7 +399,7 @@ const Contact = {
                                             <li class="banner_menu"><a href="#"><img src="img/bg/banner1.jpg" alt=""></a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="blog.html">blog <i class="fa fa-angle-down"></i></a>
+                                    <li><a href="/blog">blog <i class="fa fa-angle-down"></i></a>
                                         <ul class="sub_menu pages">
                                             <li><a href="blog-details.html">blog details</a></li>
                                             <li><a href="blog-sidebar.html">blog  Sidebar</a></li>
@@ -479,7 +479,7 @@ const Contact = {
                 <div class="col-12">
                     <div class="breadcrumb_content">
                         <ul>
-                            <li><a href="index.html">home</a></li>
+                            <li><a href="/">home</a></li>
                             <li>/</li>
                             <li>contact us</li>
                         </ul>
@@ -542,9 +542,12 @@ const Contact = {
     <div class="contact_map">
        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 ">
                    <div class="map-area">
-                      <div id="googleMap"></div>
+                      <div class="">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8638558813955!2d105.74459841424536!3d21.03813279283566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1645160430802!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      </div>
+                    
                    </div>
                 </div>
             </div>
