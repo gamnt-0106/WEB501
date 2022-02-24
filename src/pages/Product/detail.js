@@ -1,5 +1,5 @@
 import toastr from "toastr";
-import { get } from "../../api/product";
+import { get } from "../../api/post";
 import { addToCart } from "../../utils/cart";
 import "toastr/build/toastr.min.css";
 import Header from "../../components/header";
@@ -57,7 +57,7 @@ const ProductDetailPage = {
                 <div class="product_d_right">
                    <form action="#">
                        
-                        <h1>${product.name}</h1>
+                        <h1>${product.title}</h1>
                         <div class=" product_ratting">
                             <ul>
                                 <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -98,7 +98,7 @@ const ProductDetailPage = {
                         </div>
                         <div class="product_variant quantity">
                             <label>quantity</label>
-                            <input type="number" id="inputValue" min="1" max = "20" class="border border-black" />
+                            <input type="number" id="inputValue" min="1" max = "100" class="border border-black" />
                             <button class="button" type="submit">add to cart</button>  
                         </div>
                         <button data-id="${product.id}" id="btnAddToCart">Add to cart</button>

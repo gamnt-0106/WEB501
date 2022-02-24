@@ -1,5 +1,6 @@
 /* eslint-disable import/newline-after-import */
-import { getAll } from "../../api/product";
+import { getAll } from "../../api/post";
+
 import Header from "../../components/header";
 const ProductsPagee = {
     async render() {
@@ -124,17 +125,25 @@ const ProductsPagee = {
                     <!--shop toolbar end-->
                    <!--product-->
                     <div class="row shop_wrapper">
-                    <div class="grid grid-cols-3 gap-8">
-                        ${data.map((product) => `
+                        <div class="grid grid-cols-3 gap-8">
+                            ${data.map((product) => `
+                    
                             <div class=" p-4">
                                 <a href="/#/products/${product.id}">
                                     <img src="${product.img}" alt="" />
                                 </a>
-                                <h3 class="my-3"><a  href="/#/products/${product.id}" class="font-semibold text-lg text-orange-500 ">${product.name}</a></h3>                    
+                                <h3 class="my-3"><a  href="/#/products/${product.id}" class="font-semibold text-lg text-orange-500 ">${product.title}</a></h3>                    
                                 <p>${product.desc}</p>
+                                <p>${product.price}</p>
+                              
                             </div>
+                          
                         `).join("")}
-                    </div>
+                     
+                     
+                       
+                        </div>
+                   
                 `;
     },
 
